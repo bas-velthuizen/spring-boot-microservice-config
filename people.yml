@@ -1,0 +1,43 @@
+spring:
+  profiles:
+    active: cloud
+---
+
+spring:
+  profiles: cloud
+  jpa:
+    show_sql: true
+    database: H2
+    hibernate:
+      ddl-auto: create
+server:
+  port: 8006
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://discovery-77.cfapps.io/eureka/
+  instance:
+    hostname: movie-77.cfapps.io
+    nonSecurePort: 80
+ribbon:
+  eureka:
+    enabled: true
+
+---
+spring:
+  profiles: development
+  jpa:
+    show_sql: true
+    hibernate:
+      ddl-auto: create-update
+server:
+  port: 8006
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://discovery-77.cfapps.io/eureka/
+  instance:
+    preferIpAddress: true
+ribbon:
+  eureka:
+    enabled: false

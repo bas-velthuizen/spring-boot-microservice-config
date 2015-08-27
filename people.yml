@@ -9,7 +9,7 @@ spring:
     show_sql: true
     database: H2
     hibernate:
-      ddl-auto: create
+      ddl-auto: create-update
 server:
   port: 8006
 eureka:
@@ -17,7 +17,7 @@ eureka:
     serviceUrl:
       defaultZone: http://discovery-77.cfapps.io/eureka/
   instance:
-    hostname: movie-77.cfapps.io
+    hostname: people-77.cfapps.io
     nonSecurePort: 80
 ribbon:
   eureka:

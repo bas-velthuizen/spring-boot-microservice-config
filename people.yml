@@ -7,7 +7,7 @@ spring:
   profiles: cloud
   jpa:
     show_sql: true
-    database: H2
+    database: MySQL
     hibernate:
       ddl-auto: create-update
 server:

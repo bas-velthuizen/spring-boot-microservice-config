@@ -9,7 +9,7 @@ spring:
     show_sql: true
     database: MySQL
     hibernate:
-      ddl-auto: create-update
+      ddl-auto: update
 server:
   port: 8006
 eureka:

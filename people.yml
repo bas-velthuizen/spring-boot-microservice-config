@@ -13,12 +13,12 @@ spring:
 server:
   port: 8006
 eureka:
-  client:
-    serviceUrl:
-      defaultZone: http://discovery-77.cfapps.io/eureka/
+#  client:
+#    serviceUrl:
+#      defaultZone: http://discovery-77.cfapps.io/eureka/
   instance:
-     hostname: people-77.cfapps.io
-     nonSecurePort: 80
+#     hostname: people-77.cfapps.io
+#     nonSecurePort: 80
      preferIpAddress: true
 ribbon:
   eureka:

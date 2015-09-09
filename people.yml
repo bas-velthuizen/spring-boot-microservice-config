@@ -19,6 +19,7 @@ eureka:
   instance:
      hostname: people-77.cfapps.io
      nonSecurePort: 80
+     preferIpAddress: true
 ribbon:
   eureka:
     enabled: true

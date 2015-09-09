@@ -11,7 +11,8 @@ spring:
     hibernate:
       ddl-auto: update
 server:
-  port: 8006
+  port: 80061
+  en dat klopt dus niet
 eureka:
 #  client:
 #    serviceUrl:

@@ -16,9 +16,9 @@ eureka:
   client:
     serviceUrl:
       defaultZone: http://discovery-77.cfapps.io/eureka/
-  instance:
-    hostname: people-77.cfapps.io
-    nonSecurePort: 80
+  # instance:
+  #   hostname: people-77.cfapps.io
+  #   nonSecurePort: 80
 ribbon:
   eureka:
     enabled: true

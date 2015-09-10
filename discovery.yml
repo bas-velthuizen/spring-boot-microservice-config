@@ -19,6 +19,7 @@ endpoints:
   health:
     sensitive: false
 eureka:
+  enableSelfPreservation: false
   instance:
     hostname: discovery
   client:
